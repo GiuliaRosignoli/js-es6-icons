@@ -101,3 +101,45 @@ const icons = [
         family: 'fas',
     },
 ];
+
+
+// Icons container 
+ 
+const container = document.querySelector(".icons");
+console.log(container);
+
+// Print Icons
+
+printIcons(icons, container);
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************
+ *          FUNCTIONS
+ *********************************************************/
+
+function printIcons(icons, container){
+   // console.log(icons);
+   // console.log(container);
+
+   let html = "";
+   icons.forEach( (icon) => {
+       const {family, prefix, name} = icon;
+       html += 
+       `<div class="icon p-20">
+            <i class="${family} ${prefix}${name}" style="color: #333"></i>
+            <div class="title">${name}</div>
+       </div>`;
+   });
+
+ //  console.log(html);
+   container.innerHTML = html;
+}; 
