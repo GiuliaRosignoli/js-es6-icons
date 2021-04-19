@@ -102,6 +102,13 @@ const icons = [
     },
 ];
 
+// Colors
+const colors = [
+    "red",
+    "pink",
+    "blue",
+];
+
 
 // Icons container 
  
@@ -113,8 +120,9 @@ console.log(container);
 printIcons(icons, container);
 
 
+// 2nd part
 
-
+const coloredIcons = colorIcons(icons);
 
 
 
@@ -143,3 +151,33 @@ function printIcons(icons, container){
  //  console.log(html);
    container.innerHTML = html;
 }; 
+
+
+// Return color icons collection by type
+
+function colorIcons(icons, colors) {
+    const types = getType(icons);
+
+}
+
+const coloredIcons = icons.map(() =>{
+    const indexType = types.indexOf(icon.type)
+    return {
+        ...icon
+        color: colors[indexType]:
+    }
+})
+return coloredIcons;
+
+
+//Get icons type unique
+
+function getType(icons) {
+    const types = [];
+    icons.forEach((icon) => {
+        if(! types.includes(icon.type)){
+            types.push(icon.type);
+        }
+    });
+    return types
+}
