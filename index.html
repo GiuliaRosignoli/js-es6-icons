@@ -4,15 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icons</title>
+    <!-- ICONS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>Icon Display</title>
 </head>
 <body>
-
     
-    
+    <!-- ICON DISPLAY APP -->
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header-app p-20">
+            <h1>Icon <span>Display</span></h1>
+        </header>
+
+        <!-- SEARCH -->
+        <div class="search p-20">
+            <label for="type">filter by type</label>
+            <div class="wrap-select">
+                <select name="type" id="type">
+                    <option value="all">all</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- ICON -->
+        <div class="icons">
+            <!-- ICON TEMPLATE -->
+
+            <div class="icon p-20">
+                <i class="fas fa-cat" style="color: #333"></i>
+                <div class="title">cat</div>
+            </div>
+            
+        </div>
+    </div>
 
 
 
+
+
+    <!-- JS -->
     <script src="./script/main.js"></script>
 </body>
 </html>
